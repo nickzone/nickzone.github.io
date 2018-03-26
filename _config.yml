@@ -6,4 +6,3 @@ paginate_path: "/posts/page:num"
 plugins: [jekyll-paginate] #插件支持
 
 markdown: kramdown
-highlighter: pygments
