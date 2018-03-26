@@ -1,0 +1,21 @@
+--- 
+layout: page 
+---
+<div class="page-content">
+    <!-- 最近文章 -->
+    <div class="page-wrapper post-rencent">
+        <!-- <h2 class="post-rencent-headline">最近文章</h2> -->
+        <ul class="post-recent-list">
+            {% for post in site.posts%}
+            <li>                
+                <div class="post-recent-title">{{post.title}}</div>
+                {% assign contentSplit = post.content | split: "<!--more-->" %}
+                <div class="post-recent-abstract markdown-body">{{contentSplit[0]}}</div>
+                <a class="post-recent-link" href="{{site.url}}/{{post.url}}">Click to read more ...</a>
+                <div class="post-recent-date">{{post.date | date: "%Y/%m/%d"}}</div>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="post-recent-more"><a href="/posts">More Posts</a></div>
+    </div>
+</div>

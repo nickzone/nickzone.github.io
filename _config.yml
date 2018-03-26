@@ -1,0 +1,9 @@
+source: .
+destination: ./_site
+future: BOOL #用将来的日期发布文章
+paginate: 10 #开启分页功能
+paginate_path: "/posts/page:num"
+plugins: [jekyll-paginate] #插件支持
+
+markdown: kramdown
+highlighter: pygments
