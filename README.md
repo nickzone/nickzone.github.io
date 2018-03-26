@@ -1,1 +1,1 @@
-visit [https://nickzone.github.com](https://nickzone.github.com)
+visit [https://nickzone.github.io](https://nickzone.github.io)
